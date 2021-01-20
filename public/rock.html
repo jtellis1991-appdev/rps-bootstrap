@@ -1,72 +1,116 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>You played rock!</title>
+  <title>We played rock!</title>
 
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
   <meta charset="utf-8">
 
-  <link rel="stylesheet" href="/my_styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- Connect Font Awesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.2/css/all.css">
+
+  <!-- Connect Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!-- Connect Bootstrap JavaScript and its dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Make it responsive to small screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
+<!-- <style>
+  * {
+    border: 1px solid red;
+  }
+
+</style> -->
+
 <body>
-  <div class="container">
-    <div class="row mb-medium">
-      <div class="one-third">
-        <a class="button" href="/rock">
-          Play Rock
-        </a>
-      </div>
 
-      <div class="one-third">
-        <a class="button" href="/paper">
-          Play Paper
-        </a>
-      </div>
+  <div class="container pt-5">
+    
+    <div class="row mb-3">
 
-      <div class="one-third">
-        <a class="button" href="/scissors">
-          Play Scissors
-        </a>
-      </div>
+       <div class="col-6 col-md-4">
+          <a class="btn btn-info btn-block" href="/rock">
+            <i class="far fa-hand-rock fa-fw"></i>
+            <span class="d-none d-sm-inline">Play Rock</span>
+          </a>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <a class="btn btn-outline-info btn-block" href="/paper">
+            <i class="far fa-hand-paper fa-fw"></i>
+            <span class="d-none d-sm-inline">Play Paper</span>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a class="btn btn-outline-info btn-block" href="/scissors">
+            <i class="far fa-hand-scissors fa-fw"></i>
+            <span class="d-none d-sm-inline">Play Scissors</span>
+          </a>
+        </div>
+
     </div>
+      
+    <div class="row text-center mb-3">
 
-    <div class="row mb-medium">
-      <div class="one-half">
-        <div class="player-card centered">
-          <h2>
-            <em>We</em> <strong>played</strong> <a href="https:/www.google.com">rock</a>!
-          </h2>
+      <div class="col-sm-6">
+        <div class="card border-success">
+          <div class="text-success card-body">
+            <h2 class="card-title">
+              We played rock!
+            </h2>
+            <p class="card-text">
+              <i class="far fa-hand-rock fa-10x"></i>
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="one-half">
-        <div class="computer-card centered">
-          <h2>
-            They played paper!
-          </h2>
+      <div class="col-sm-6">
+        <div class="card border-danger">
+          <div class="text-danger card-body">
+            <h2 class="card-title">
+              They played paper!
+            </h2>
+            <p class="card-text">
+              <i class="far fa-hand-paper fa-10x"></i>
+            </p>
+          </div>
         </div>
       </div>
+
     </div>
 
-    <div class="row-center mb-medium">
-      <div class="two-thirds">
-        <div class="outcome-card centered">
-          <h2>
+    <div class="row text-center">
+
+      <div class="col-md-8 offset-md-2">
+        <div class="alert alert-danger">
+          <h2 class="display-3">
             We lost!
           </h2>
         </div>
       </div>
+
     </div>
 
-    <div class="row-center mb-medium">
-      <div class="full-width centered">
+    <div class="row text-center">
+
+      <div class="col-md-12">
         <a href="/">
           Rules
         </a>
       </div>
+
     </div>
+
+
+
   </div>
 </body>
 </html>
